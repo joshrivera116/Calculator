@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CalcuLATOR</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar__container">
+        <a href="" class="logo">CALCULATOR</a>
+      </div>
+    </div>
+    <form onsubmit="return false" action="">
+      <div class="inputs">
+        <div class="input__container">
+          <input
+          class="input"
+            required
+            type="number"
+            required
+            id="num1"
+            placeholder="Enter First Number"
+          />
+          <input
+          class="input"
+            type="number"
+            required
+            id="num2"
+            placeholder="Enter Second Number"
+          />
+          <select id="operator">
+            <option value="add">Addition</option>
+            <option value="subtraction">Subtraction</option>
+            <option value="multiply">multiplication</option>
+            <option value="divide">division</option>
+          </select>
+        <div class="calc__cont">
+          <button type="submit" onclick="calculate()" class="calculate__buttn">
+            Calculate
+          </button>
+        </div>
+        </div>
+      </div>
+      <div class="calc__butt">
+        <div class="calc__container">
+          <p id="result">Results Here</p>
+          <script src="scripts.js"></script>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
